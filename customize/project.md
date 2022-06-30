@@ -168,9 +168,11 @@ In Digger, users can easily redeploy their services to previous version.
 
 ![](../img/project/redeploy/quick-redeploy.png)
 
-1. You will be prompted to confirm the redeployment
-2. Your resource will run through the deployment stages and be redeployed.
-3. When successful, a green tick will appear near the deployment that is currently live
+2\. You will be prompted to confirm the redeployment
+
+3\. Your resource will run through the deployment stages and be redeployed.
+
+4\. When successful, a green tick will appear near the deployment that is currently live
 
 #### In advanced view
 
@@ -179,9 +181,11 @@ In Digger, users can easily redeploy their services to previous version.
 
 ![](../img/project/redeploy/quick-redeploy.png)
 
-1. You will be prompted to confirm the redeployment
-2. Your resource will run through the deployment stages and be redeployed.
-3. When successful, a green tick will appear near the deployment that is currently live
+3\. You will be prompted to confirm the redeployment
+
+4\. Your resource will run through the deployment stages and be redeployed.
+
+5\. When successful, a green tick will appear near the deployment that is currently live
 
 ## Digger limitations
 
