@@ -8,7 +8,7 @@ Therefore, unlike PaaS providers such as Heroku and Vercel that run your code on
 
 Digger manages your AWS account through infrastructure-as-code that it automatically generates.
 
-![Screenshot 2022-06-29 at 16.34.00.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c2797dc-9e3a-4b7a-9a3a-4d24a144a888/Screenshot\_2022-06-29\_at\_16.34.00.png)
+![](<.gitbook/assets/1 (1).png>)
 
 ### Your AWS account
 
