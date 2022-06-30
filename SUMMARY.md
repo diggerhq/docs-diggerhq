@@ -4,7 +4,7 @@
 
 ## Version
 
-* [Digger classic](https://dox.digger.dev)
+* [Digger classic](https://doks.digger.dev)
 * [Digger new](https://docs.digger.dev)
 
 ## Overview
