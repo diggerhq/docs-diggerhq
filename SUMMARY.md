@@ -1,64 +1,13 @@
-
-        {
-          title: 'Quick Start',
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [
-            '/get-started/deploy-node-app',
-          ]
-        },        
-        {
-          title: 'Next Steps',
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [
-            '/next-steps/deploy-a-lambda',
-            '/next-steps/deploy-react-app',
-          ]
-        },
-        {
-          title: 'Customize',
-          collapsable: false,
-          sidebarDepth: 1,
-          children: [
-            '/customize/terraform',
-            '/customize/cicd',
-            '/customize/project',
-          ]
-        },
-        {
-          title: 'Reference',
-          collapsable: false,
-          sidebarDepth: 0,
-          children: [
-            '/reference-yaml',
-            '/reference-digger-supported-tech',
-            '/reference-digger-key-features',
-            '/reference-cli'
-          ]
-        },
-        {
-          title: 'Miscellaneous',
-          collapsable: false,
-          children: [
-            '/misc/aws-keys',
-            '/misc/adding-domains-with-vercel',
-            '/misc/tagging-and-rollbacks',
-            '/misc/env-vars-build',
-            '/misc/secrets',
-          ]
-        }
-      ]
-    }
-  }
-
-
 # Table of contents
 
-* [Introduction to Digger?](README.md)
+## Version
+
+* [Digger classic](/classic)
+* [Digger new](/digger)
+
 
 ## Overview
-
+* [Introduction to Digger?](README.md)
 * [Concepts](overview/concepts.md)
 * [How it works](overview/how-it-works.md)
 * [Digger vs Other](overview/digger-vs-other.md)
@@ -69,26 +18,26 @@
 
 ## Customize
 
-* [](customize/terraform.md)
-* [](customize/cicd/deploy-node-app.md)
-* [](customize/project/deploy-node-app.md)
+* [Write your own Terraform](customize/terraform.md)
+* [CI/CD Integrations](customize/cicd.md)
+* [Project customisation](customize/project.md)
 
 ## Reference
 
-* [](reference-yaml.md)
-* [](reference-digger-supported-tech.md)
-* [](reference-digger-key-features.md)
-* [](reference-cli.md)
+* [digger.yml reference](reference-yaml.md)
+* [Digger supported Tech](reference-digger-supported-tech.md)
+* [Digger key features](reference-digger-key-features.md)
+* [CLI (legacy) reference](reference-cli.md)
 
 ## Miscellaneous
 
-* [](misc/aws-keys.md)
-* [](misc/adding-domains-with-vercel.md)
-* [](misc/tagging-and-rollbacks.md)
-* [](misc/env-vars-build.md)
-* [](misc/secrets.md)
+* [Creating AWS Keys](misc/aws-keys.md)
+* [Environments during build](misc/adding-domains-with-vercel.md)
+* [Image tagging rollbacks](misc/tagging-and-rollbacks.md)
+* [Environment variables during build](misc/env-vars-build.md)
+* [Secrets](misc/secrets.md)
 
 ## Labs
 
-* [](next-steps/deploy-a-lambda.md)
-* [](next-steps/deploy-react-app.md)
+* [Deploying a lambda function](next-steps/deploy-a-lambda.md)
+* [Deploying a react app](next-steps/deploy-react-app.md)
