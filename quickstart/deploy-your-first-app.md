@@ -37,46 +37,46 @@ Let's try to deploy a simple node application as a container.
 
 ![8.png](../.gitbook/assets/8.png)
 
-3\. When “Connect to AWS” button clicked, user is redirected to AWS CloudFormation template that created a role and policy in user’s account that allow Digger account to make changes.
+3\. When “Connect to AWS” button clicked, user is redirected to AWS CloudFormation template that created a role and policy in user’s account that allow Digger account to make changes
+
+**-> Click the "Create Stack" button** at the bottom of the page. This may take a minute or two.
 
 ![9.png](../.gitbook/assets/9.png)
 
-4\. We can review what exactly has been created.
-
-![10.png](<../.gitbook/assets/10 (1).png>)
-
-5\. We can check the policy and the role names.
-
-![11.png](<../.gitbook/assets/11 (1).png>)
-
-6\. And what the policy allow to do.
-
-![12.png](<../.gitbook/assets/12 (1).png>)
-
-7\. Now we can return back to Digger and click “Next” button.
+4\. Go back to Digger and click “Next” button.
 
 ![13.png](<../.gitbook/assets/13 (1).png>)
 
-8\. And review all information before we click “Deploy” button.
+5\. Review the options before we click “Deploy” button. Make changes if needed.
 
-![14.png](../.gitbook/assets/14.png)
+Some of the less frequently used options can be found under "More options" toggle.
 
-![15.png](<../.gitbook/assets/15 (1).png>)
+![Standard options](../.gitbook/assets/14.png)
 
-9\. If everything is correct, click “Deploy”
+![Additional options](<../.gitbook/assets/15 (1).png>)
 
-![16.png](<../.gitbook/assets/16 (1).png>)
+6\. Looking good? Click “Deploy”!&#x20;
 
-10\. It takes 5-10 minutes to deploy a container and we can check logs and deployment progress if we click on “Infra”
+It can takes 5-7 minutes to deploy a container. In the meantime you can check logs and deployment progress - just click on “Infra” step
 
-![17.png](<../.gitbook/assets/17 (1).png>)
+![Deployment started](<../.gitbook/assets/16 (1).png>)
 
-11\. Finally deployment is finished!
+![Deployment logs](<../.gitbook/assets/17 (1).png>)
 
-![18.png](<../.gitbook/assets/18 (1).png>)
+7\. Yay - the deployment is finished! Click the "Open App" button to see it live
 
-12\. If we click on “Open App” link we can see the application running.
+![Deployment successful](<../.gitbook/assets/18 (1).png>)
 
-![19.png](<../.gitbook/assets/19 (1).png>)
+![Application deployed](<../.gitbook/assets/19 (1).png>)
 
-That’s all.
+This is it! Your AWS account is fully configured and your app is live 🎉🎉🎉
+
+## Appendix: permissions
+
+Digger does not require administrator-level access to your AWS account. It only asks for permissions necessary to provision and run applications managed by Digger.
+
+You can see which permissions are required during the AWS account connection step:
+
+![Roles and policies](../.gitbook/assets/aws-policy.png)
+
+![Permissions required](../.gitbook/assets/aws-permissions.png)
