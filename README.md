@@ -1,71 +1,39 @@
-# What is MyProduct?
+# Introduction
 
-{% hint style="info" %}
-**Good to know:** providing a brief overview of your product and its core use cases is a great place to start with product docs. Your product might seem obvious to you – you made it! However, to others, even folks who are trying your product after reading your site or getting a sales demo, it can still be unclear. This is your chance to clarify your product and set the right expectations!
-{% endhint %}
+**There's something strange in the way we build software today.**
+![Tools you love: Vercel, Heroku, Firebase, Netlify; Tools you use at work: AWS, GCP, Azure](./img/tools-you-love-vs-use-at-work.png)
 
-Here are a couple of examples of succinct overviews from products with really great docs:
+Cloud providers like AWS are extremely complex. Without prior DevOps expertise it can take many days to set up. There are great "no-ops" platforms like Vercel and Heroku out there, but their use is limited to small projects. Most teams keep building on AWS, GCP or Azure – because they know that eventually they will need some of the 200+ services that only big cloud providers have.
 
-> Loom is a video messaging tool that helps you get your message across through instantly shareable videos.
->
-> With Loom, you can record your camera, microphone, and desktop simultaneously. Your video is then instantly available to share through Loom's patented technology.
->
-> — From the [Loom Docs](https://support.loom.com/hc/en-us/articles/360002158057-What-is-Loom-)
+So you are forced to choose between great developer experience and building a future-proof stack. **This is wrong.** Imagine if mobile developers needed one set of tools to _start_ building an app, and had to rebuild it with entirely different tools after a year or so – wouldn't that be ridiculous?
 
-> The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more.
->
-> — From the [Mailchimp Marketing API docs](https://mailchimp.com/developer/marketing/docs/fundamentals/)
+### Digger makes AWS simple
 
-## Getting Started
+It automatically generates infrastructure for your code in your AWS account.
+So you can build on AWS without having to deal with its complexity. See [How it works](./overview/how-it-works.md)
 
-**Got 2 minutes?** Check out a video overview of our product:
+You can launch in minutes – no need to build from scratch, or even think of infrastructure at all
 
-{% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
+- ✅ Easy to use Web UI + powerful CLI
+- ✅ Deploy webapps, serverless functions and databases: just connect GitHub repositories
+- ✅ Multiple environments: replicate your entire stack in a few clicks. Dev / staging / production; short-lived for testing; per-customer
+- ✅ Zero-configuration CI with GitOps: pick a branch for each environment and your services will be deployed on every git push
+- ✅ Logs, environment variables, secrets, domains: never touch AWS again!
 
-{% hint style="info" %}
-**Good to know:** A succinct video overview is a great way to introduce folks to your product. Embed a Loom, Vimeo or YouTube video and you're good to go! We love this video from the fine folks at [Loom](https://loom.com) as a perfect example of a succinct feature overview.
-{% endhint %}
+### You keep the full power of AWS
 
-### Guides: Jump right in
+Traditional PaaS like Heroku or Vercel run your code on their servers. Digger takes a different approach: it generates infrastructure-as-code (Terraform) that manages your AWS account. See [Digger vs Other](./overview/digger-vs-other.md)
 
-Follow our handy guides to get started on the basics as quickly as possible:
+This removes the main limitation of traditional PaaS. With Digger you can have great modern developer experience **and** get a future-proof stack at the same time. Terraform is industry standard for all things DevOps; with Digger you can customise every bit. You can even use your own bespoke templates with Digger. So unlike traditional PaaS, you never outgrow Digger.
 
-{% content-ref url="guides/creating-your-first-project.md" %}
-[creating-your-first-project.md](guides/creating-your-first-project.md)
-{% endcontent-ref %}
+### Why Amazon hasn't done it?
 
-{% content-ref url="guides/creating-your-first-task.md" %}
-[creating-your-first-task.md](guides/creating-your-first-task.md)
-{% endcontent-ref %}
+Great question. Neither did Microsoft, nor did Google. We at Digger believe this is because complexity is one of the few lock-in levers still available to major cloud providers.
 
-{% content-ref url="guides/advanced-permissions.md" %}
-[advanced-permissions.md](guides/advanced-permissions.md)
-{% endcontent-ref %}
+AWS, GCP and Azure are essentially identical these days for the 95% of tasks at hand – but they don't want to make it easy for you to move to a different provider. So they lure you in with free credits, and then even if you aren't building anything unique you are unlikely to move – because you have invested lots of time in learning it.
 
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
+To be fair, AWS has introduced a number of easy-to-use tools. Beanstalk is the oldest one (their answer to Heroku); there's also Amplify, Copilot, Lightsail. But these tools suffer from the same problem as traditional PaaS: they severely limit your options. With Amplify you can only build static web apps (like Netlify); Copilot is exclusively for containers (like Google Cloud Run); Lightsail is essentially a simplified interface for a single EC2 instance (like Digital Ocean Droplet). See [Digger vs Other](./overview/digger-vs-other.md).
 
-### Fundamentals: Dive a little deeper
+Major cloud providers today are strikingly similar to hardware manufacturers of 1970s. Each is making a collection of specialised "devices" – managed cloud services. Until recently they competed with each other by introducing new types of devices like specialised databases, serverless functions, container runtimes. But now the main types of devices are firmly established, with the possible exception of tools specific to machine learning. AWS, GCP and Azure today are one step away from becoming under-the-hood commodities – just like vendors of graphic cards, RAM and other standardised PC compoenents.
 
-Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
-
-{% content-ref url="fundamentals/projects.md" %}
-[projects.md](fundamentals/projects.md)
-{% endcontent-ref %}
-
-{% content-ref url="fundamentals/members.md" %}
-[members.md](fundamentals/members.md)
-{% endcontent-ref %}
-
-{% content-ref url="fundamentals/task-lists.md" %}
-[task-lists.md](fundamentals/task-lists.md)
-{% endcontent-ref %}
-
-{% content-ref url="fundamentals/tasks.md" %}
-[tasks.md](fundamentals/tasks.md)
-{% endcontent-ref %}
-
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
-{% endhint %}
+For Amazon, Microsoft and Google introducing a simplification layer that is based on a cloud-agnostic open source tool (Terraform) would mean becoming commodities quicker. They don't want this. But it's inevitable, someone will do it eventually. So we thought we'd give it a shot.
