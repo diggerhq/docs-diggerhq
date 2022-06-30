@@ -2,11 +2,6 @@
 
 * [Introduction to Digger?](README.md)
 
-## Version
-
-* [Digger classic](https://doks.digger.dev)
-* [Digger new](https://docs.digger.dev)
-
 ## Overview
 
 * [Concepts](overview/concepts.md)
@@ -42,3 +37,8 @@
 
 * [Deploying a lambda function](next-steps/deploy-a-lambda.md)
 * [Deploying a react app](next-steps/deploy-react-app.md)
+
+## Version
+
+* [Digger classic](https://doks.digger.dev)
+* [Digger new](https://docs.digger.dev)
