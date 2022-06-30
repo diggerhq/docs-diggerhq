@@ -9,6 +9,6 @@
 ***
 
 * [Frequently Asked Questions](frequently-asked-questions.md)
-* [Versions](versions/README.md)
+* [Version](version/README.md)
   * [Digger Classic](https://doks.digger.dev)
   * [Digger new](https://docs.digger.dev)
