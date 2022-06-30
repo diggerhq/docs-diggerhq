@@ -1,5 +1,7 @@
 # Table of contents
 
+* [Introduction to Digger?](README.md)
+
 ## Version
 
 * [Digger classic](/classic)
@@ -7,7 +9,7 @@
 
 
 ## Overview
-* [Introduction to Digger?](README.md)
+
 * [Concepts](overview/concepts.md)
 * [How it works](overview/how-it-works.md)
 * [Digger vs Other](overview/digger-vs-other.md)
