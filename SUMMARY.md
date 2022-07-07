@@ -4,7 +4,7 @@
 
 ## Quickstart
 
-* [Deploy your first app](quickstart/deploy-your-first-app.md)
+* [🚀 Deploy your first app](quickstart/deploy-your-first-app.md)
 
 ***
 
