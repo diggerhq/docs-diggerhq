@@ -23,6 +23,8 @@ Open [https://dashboard.digger.dev](https://dashboard.digger.dev) and log in wit
 
 #### Step 2: link your GitHub repo
 
+_If you are deploying_ [_our example app,_](https://github.com/diggerhq/a-nodeapp) _please fork it onto your GitHub account_
+
 Click “Add from repository” button and allow digger to access the repo you want to deploy.
 
 ![3.png](<../.gitbook/assets/3 (1).png>)
