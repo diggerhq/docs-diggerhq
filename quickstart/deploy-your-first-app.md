@@ -1,4 +1,4 @@
-# Deploy your first app
+# 🚀 Deploy your first app
 
 This tutorial shows you how to deploy a sample node application with digger. The repository we would like to deploy is here: [**https://github.com/diggerhq/a-nodeapp**](https://github.com/diggerhq/a-nodeapp) **(opens new window)**.
 
@@ -31,18 +31,19 @@ Click “Add from repository” button and allow digger to access the repo you w
 
 ![6.png](../.gitbook/assets/6.png)
 
-The list of repositories should now be visible on the Dashboard.
+Close the authentication tab and press 'Refresh List'.&#x20;
 
-Pick the repo you would like to deploy and click “Next”.
+A list of repositories should now be visible on the Dashboard.
+
+Pick the repo you would like to deploy&#x20;
+
+Click “Next”.
 
 ![](../.gitbook/assets/7.png)
 
 #### Step 4: Connect your AWS account
 
-There are two options:
-
-* Keyless connection - Digger AWS account is connected directly to your AWS account, you don't need to share your keys. This is the easiest and the most secure way.
-* Using a key/secret pair (Not recommended). Can still be needed in a federated setup.
+Digger's AWS account can connect directly to your AWS account, you don't need to share your keys. This is the easiest and the most secure way.
 
 ![8.png](../.gitbook/assets/8.png)
 
@@ -52,29 +53,33 @@ When “Connect to AWS” button clicked, you are redirected to AWS CloudFormati
 
 ![9.png](../.gitbook/assets/9.png)
 
+It's also possible (but not recommended) to connect with a key/secret pair. It can be needed in a federated setup. More information on how to do this can be found [here](https://learn.digger.dev/misc/aws-keys.html)
+
 #### Step 5: deploy
 
 Go back to Digger and click the “Next” button.
 
 ![13.png](<../.gitbook/assets/13 (1).png>)
 
-Review the options before we click “Deploy” button. Make changes if needed.
+Review the options before we click the “Deploy” button. Make changes if needed.
 
-Some of the less frequently used options can be found under "More options" toggle.
+_Check: have you selected the correct branch name e.g. main?_
+
+Some of the less frequently used options can be found under the "More options" toggle.
 
 ![Standard options](../.gitbook/assets/14.png)
 
 ![Additional options](<../.gitbook/assets/15 (1).png>)
 
-Looking good? Click “Deploy”!&#x20;
+When you're happy, press “Deploy”!&#x20;
 
-It can takes 5-7 minutes to deploy a container. In the meantime you can check logs and deployment progress - just click on “Infra” step
+It can take 5-7 minutes to deploy a container. In the meantime you can check logs and deployment progress - just click on “Infra” step
 
 ![Deployment started](<../.gitbook/assets/16 (1).png>)
 
 ![Deployment logs](<../.gitbook/assets/17 (1).png>)
 
-#### Step 6: verify that your app works
+#### Step 6: Verify that your app works
 
 Yay - the deployment is finished!
 
