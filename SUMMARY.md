@@ -8,8 +8,8 @@
 
 ***
 
+* [Environmental variables during build](environmental-variables-during-build.md)
 * [Frequently Asked Questions](frequently-asked-questions.md)
 * [Version](version/README.md)
   * [Digger Classic](https://doks.digger.dev)
   * [Digger new](https://docs.digger.dev)
-* [Environmental variables during build](environmental-variables-during-build.md)
