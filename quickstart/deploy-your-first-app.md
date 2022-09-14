@@ -17,77 +17,96 @@ Let's try to deploy a simple node application as a container
 
 Open [https://dashboard.digger.dev](https://dashboard.digger.dev) and log in with your GitHub account.
 
-![1.png](<../.gitbook/assets/1 (1).png>)
+<figure><img src="../.gitbook/assets/Screenshot 2022-09-14 at 16.48.57.png" alt=""><figcaption></figcaption></figure>
+
+Authorize Digger HQ. At this point, Digger is only accessing your email ID for login.
 
 ![2.png](<../.gitbook/assets/2 (1).png>)
 
-#### Step 2: link your GitHub repo
+#### Step 2: Securely connect AWS Account
+
+
+
+Press on the big orange tile that says "Press here to open AWS console Website"\
+
+
+<figure><img src="../.gitbook/assets/Screenshot 2022-09-14 at 17.02.54.png" alt=""><figcaption></figcaption></figure>
+
+\
+You will then be redirected to the AWS CloudFormation template that securely creates a role and policy in your AWS account which allows Digger's AWS account to make changes.
+
+**-> Click the "Create Stack" button** at the bottom of the page. This may take a minute or two, before you can move to the next stage.\
+\
+
+
+<figure><img src="../.gitbook/assets/Screenshot 2022-09-14 at 17.07.42.png" alt=""><figcaption></figcaption></figure>
+
+Watch a video explainer [here](https://www.youtube.com/watch?v=KNmeK\_vhy1A).\
+\
+It's also possible (but not recommended) to connect with a key/secret pair. It can be needed in a federated setup. More information on how to do this can be found [here](https://learn.digger.dev/misc/aws-keys.html)
+
+#### Step 3 : Link your GitHub repo
 
 _Note: if you are deploying_ [_our example app,_](https://github.com/diggerhq/a-nodeapp) _you will first need to fork the example app onto your GitHub account._
 
-Click “Add from repository” button and allow digger to access the repo you want to deploy.
+Click “Select repository to deploy” button and allow digger to access the repo you want to deploy.
 
-![3.png](<../.gitbook/assets/3 (1).png>)
+<figure><img src="../.gitbook/assets/Screenshot 2022-09-14 at 16.53.07.png" alt=""><figcaption></figcaption></figure>
+
+Click on "Install and Authorise" DiggerHQ so that Digger can securely access your repositories.
 
 ![5.png](<../.gitbook/assets/5 (1).png>)
 
-![6.png](../.gitbook/assets/6.png)
+You will then get the following screen. You can close the tab and return to Digger.\
+\
+\
 
-Close the authentication tab and press 'Refresh List'.&#x20;
 
-A list of repositories should now be visible on the Dashboard.
+<figure><img src="../.gitbook/assets/Screenshot 2022-09-14 at 17.24.20.png" alt=""><figcaption></figcaption></figure>
+
+A list of repositories should now be visible on the Dashboard.\
+
+
+<figure><img src="../.gitbook/assets/Screenshot 2022-09-14 at 17.23.40.png" alt=""><figcaption></figcaption></figure>
 
 Pick the repo you would like to deploy&#x20;
 
-Click “Next”.
+You will then be guided to the Summary screen
 
-![](../.gitbook/assets/7.png)
+****
 
-#### Step 4: Connect your AWS account
+#### Step 4 : Deploy to AWS.
 
-Digger's AWS account can connect directly to your AWS account, you don't need to share your keys. This is the easiest and the most secure way.
+\
 
-![8.png](../.gitbook/assets/8.png)
 
-When “Connect to AWS” button clicked, you are redirected to AWS CloudFormation template that created a role and policy in your AWS account that allow Digger account to make changes
+<figure><img src="../.gitbook/assets/Screenshot 2022-09-14 at 17.29.57.png" alt=""><figcaption></figcaption></figure>
 
-**-> Click the "Create Stack" button** at the bottom of the page. This may take a minute or two.
-
-![9.png](../.gitbook/assets/9.png)
-
-It's also possible (but not recommended) to connect with a key/secret pair. It can be needed in a federated setup. More information on how to do this can be found [here](https://learn.digger.dev/misc/aws-keys.html)
-
-#### Step 5: deploy
-
-Go back to Digger and click the “Next” button.
-
-![13.png](<../.gitbook/assets/13 (1).png>)
-
-Review the options before we click the “Deploy” button. Make changes if needed.
+Review the options before clicking the “Deploy” button. Make changes if needed.
 
 _Check: have you selected the correct branch name e.g. main?_
 
 Some of the less frequently used options can be found under the "More options" toggle.
 
-![Standard options](../.gitbook/assets/14.png)
-
 ![Additional options](<../.gitbook/assets/15 (1).png>)
 
 When you're happy, press “Deploy”!&#x20;
 
-It can take 5-7 minutes to deploy a container. In the meantime you can check logs and deployment progress - just click on “Infra” step
+It can take 5-7 minutes to deploy a container. In the meantime you can check logs and deployment progress.\
+\
 
-![Deployment started](<../.gitbook/assets/16 (1).png>)
 
-![Deployment logs](<../.gitbook/assets/17 (1).png>)
+<figure><img src="../.gitbook/assets/Screenshot 2022-09-14 at 17.32.06.png" alt=""><figcaption></figcaption></figure>
 
-#### Step 6: Verify that your app works
+#### Step 5 : Verify that your app works
 
 Yay - the deployment is finished!
 
-**-> Click the "Open App" button** to see it live
+**-> Click the "Open App" button** to see it live\
+\
 
-![Deployment successful](<../.gitbook/assets/18 (1).png>)
+
+<figure><img src="../.gitbook/assets/Screenshot 2022-09-14 at 17.03.54.png" alt=""><figcaption></figcaption></figure>
 
 ![Application deployed](<../.gitbook/assets/19 (1).png>)
 
