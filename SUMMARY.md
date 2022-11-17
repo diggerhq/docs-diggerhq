@@ -15,4 +15,3 @@
   * [Digger Classic](https://doks.digger.dev)
   * [Digger new](https://docs.digger.dev)
 * [Digger key features ⚡️](digger-key-features.md)
-* [Playground App](playground-app.md)
